@@ -1,0 +1,11 @@
+requirement_id,category,requirement,priority,sequence_id,dependencies,acceptance_criteria,test_id,status
+REQ-CTRL-001,Controller,Player can move relative to camera using configured directional input,Must,SEQ-001,Input mapping; character controller,Movement direction matches camera yaw; no movement input causes no horizontal acceleration beyond defined friction,TST-001,Planned
+REQ-CTRL-002,Controller,Player can sprint while sprint input is held and stamina is available,Must,SEQ-001,Stamina component,Sprint speed and stamina drain match configured values; sprint stops at zero stamina,TST-002,Planned
+REQ-INT-001,Interaction,Player can activate the auxiliary power panel within interaction range,Must,SEQ-002,Interaction detector; panel,Prompt appears in range; one activation changes power state once,TST-003,Planned
+REQ-MSN-001,Mission,Objective updates when auxiliary power is restored,Must,SEQ-002,Mission manager; power panel,HUD and mission state update without duplicate completion events,TST-004,Planned
+REQ-AI-001,AI,"Drone transitions through patrol, investigate, pursue, and return/search states",Must,SEQ-003,Perception; navigation,State transitions match configured conditions and are repeatable,TST-005,Planned
+REQ-LVL-001,Level,All mandatory objectives are reachable without unintended jumps or collision traps,Must,All,Blockout; collision; navigation,Three complete playthroughs without softlock or unintended out-of-bounds access,TST-006,Planned
+REQ-AUD-001,Audio,Critical interactions and drone alert have distinct sound feedback,Should,SEQ-002;SEQ-003,Audio event map,"Correct event plays once, at appropriate volume and spatial position",TST-007,Planned
+REQ-UI-001,UI,Current objective and valid interaction prompt are readable,Must,All,HUD; interaction system,Text is legible at target resolution and does not obscure the center of play,TST-008,Planned
+REQ-NAR-001,Narrative,Final anomalous reply plays after successful transmission,Must,SEQ-006,Mission state; dialogue/audio,Final line and subtitle trigger once after transmission completion,TST-009,Planned
+REQ-TECH-001,Technical,Packaged build launches and can complete the full slice,Must,All,Build settings; assets,Clean launch and full completion on target machine,TST-010,Planned

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UVS | Production Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div><p class="eyebrow">GAMEDEV / PRODUCTION SYSTEM</p><h1>Universal Vertical Slice</h1><p class="sub">SIGNAL AT KEPLER-9 · SCI-FI STARTER PROJECT</p></div>
+  <div class="header-actions"><button id="exportBtn" class="ghost">Export JSON</button><button id="resetBtn" class="danger ghost">Reset demo data</button></div>
+</header>
+<main>
+  <section class="hero">
+    <div><p class="eyebrow">MISSION CONTROL</p><h2>Build the slice. Prove the loop.</h2><p>Track requirements, sequences, assets and QA from one local dashboard. Data is stored in this browser only.</p></div>
+    <div class="hero-stat"><span>SLICE TARGET</span><strong>5–8 min</strong><small>One level · One mission</small></div>
+  </section>
+  <section class="metrics" id="metrics"></section>
+  <nav class="tabs" aria-label="Dashboard sections">
+    <button class="tab active" data-tab="requirements">Requirements</button>
+    <button class="tab" data-tab="sequences">Sequences</button>
+    <button class="tab" data-tab="assets">Assets</button>
+    <button class="tab" data-tab="qa">QA Tests</button>
+    <button class="tab" data-tab="gates">Production Gates</button>
+  </nav>
+  <section class="panel">
+    <div class="panel-head"><div><p class="eyebrow" id="sectionEyebrow">TRACEABILITY</p><h2 id="sectionTitle">Requirements</h2></div><button id="addBtn" class="primary">+ Add item</button></div>
+    <div class="toolbar"><input id="searchInput" type="search" placeholder="Search IDs, names, status…"><select id="statusFilter"><option value="">All statuses</option></select></div>
+    <div id="tableWrap" class="table-wrap"></div>
+  </section>
+  <section class="lower-grid">
+    <article class="panel"><p class="eyebrow">PRODUCTION ORDER</p><h2>Five gates to release</h2><ol class="gate-list"><li><b>01 / Design ready</b><span>Story, scope, sequences, requirements</span></li><li><b>02 / Graybox complete</b><span>Playable start-to-finish loop</span></li><li><b>03 / Feature complete</b><span>Must-have systems integrated</span></li><li><b>04 / Content & polish</b><span>Assets, audio, lighting, performance</span></li><li><b>05 / Release candidate</b><span>Critical tests pass; package verified</span></li></ol></article>
+    <article class="panel"><p class="eyebrow">DESIGN PILLARS</p><h2>Keep the slice focused</h2><div class="pillar"><i>01</i><div><b>Read the space</b><span>Navigation is communicated by environment.</span></div></div><div class="pillar"><i>02</i><div><b>Act with intent</b><span>Every interaction gives clear feedback.</span></div></div><div class="pillar"><i>03</i><div><b>Tension without overload</b><span>One readable security-drone encounter.</span></div></div><div class="pillar"><i>04</i><div><b>Finish with consequence</b><span>The final signal creates a narrative hook.</span></div></div></article>
+  </section>
+  <footer>UVS STARTER KIT · Local-first demo · Export JSON for a backup · Keep engine project files in their native project folders.</footer>
+</main>
+<dialog id="itemDialog"><form method="dialog" id="itemForm"><div class="dialog-head"><div><p class="eyebrow">ITEM EDITOR</p><h2 id="dialogTitle">Add item</h2></div><button class="close" value="cancel" aria-label="Close">×</button></div><div id="formFields" class="form-fields"></div><div class="dialog-actions"><button class="ghost" value="cancel">Cancel</button><button id="saveBtn" class="primary" value="default">Save item</button></div></form></dialog>
+<script src="app.js"></script>
+</body></html>

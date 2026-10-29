@@ -1,0 +1,13 @@
+asset_id,category,name,sequence_or_level,priority,source_format,engine_format,dependencies,owner,status,acceptance_criteria
+AST_CHR_001,Character,Field Operator,All,Must,Blend/FBX,glTF/FBX/native import,Rig; materials; animations,TBD,Planned,"Scale, skeleton, materials and required clips validated"
+AST_ENV_001,Environment,Docking Airlock Kit,LVL-001,Must,Blend,glTF/FBX/native import,Materials; collision,TBD,Planned,Modular pieces snap together; collision is clean
+AST_ENV_002,Environment,Service Corridor Kit,LVL-001,Must,Blend,glTF/FBX/native import,Materials; lights,TBD,Planned,Supports intended path and drone visibility
+AST_ENV_003,Environment,Relay Chamber Kit,LVL-001,Must,Blend,glTF/FBX/native import,Console; emissive materials,TBD,Planned,Console focal point is readable
+AST_PROP_001,Prop,Auxiliary Power Panel,SEQ-002,Must,Blend,glTF/FBX/native import,Emissive state materials; interaction,TBD,Planned,ON/OFF states visible and interaction anchor aligned
+AST_PROP_002,Prop,Relay Console,SEQ-005,Must,Blend,glTF/FBX/native import,Screen material; interaction,TBD,Planned,Activation and transmission states clear
+AST_AI_001,Enemy,Security Drone,SEQ-003,Must,Blend/FBX,glTF/FBX/native import,Rig; sensor light; AI,TBD,Planned,Silhouette and alert states readable
+AST_AUD_001,SFX,Power panel activation,SEQ-002,Must,WAV,Engine-supported audio,Audio event map,TBD,Planned,"Audible, non-clipping, plays once per activation"
+AST_AUD_002,SFX,Drone alert,SEQ-003,Must,WAV,Engine-supported audio,AI event,TBD,Planned,Clearly distinguishable from ambience
+AST_BGM_001,BGM,Station tension loop,All,Should,WAV,Engine-supported audio,Music bus,TBD,Planned,Loop seamless and does not mask critical cues
+AST_VO_001,Voiceline,Final anomalous reply,SEQ-006,Must,WAV,Engine-supported audio,Subtitle string,TBD,Planned,Voice and subtitle trigger once and are synchronized
+AST_VFX_001,VFX,Relay transmission effect,SEQ-005,Should,Engine-native,Engine-native,Console state,TBD,Planned,Readable and within performance budget

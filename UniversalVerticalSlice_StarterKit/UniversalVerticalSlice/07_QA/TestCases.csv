@@ -1,0 +1,11 @@
+test_id,requirement_id,test_name,preconditions,steps,expected_result,priority,status,notes
+TST-001,REQ-CTRL-001,Camera-relative movement,Mission loaded; player grounded,Move forward; rotate camera 90 degrees; move forward again,Player moves relative to current camera yaw; diagonal movement is normalized,Must,Not Run,
+TST-002,REQ-CTRL-002,Sprint stamina behavior,Player grounded; stamina full,Hold sprint; continue until stamina is depleted; release and press again,Sprint drains stamina; zero prevents sprint; recovery follows defined rule,Must,Not Run,
+TST-003,REQ-INT-001,Power panel interaction,At service corridor; power OFF,Approach panel; inspect prompt; interact once,Prompt appears in range; panel changes to ON; event fires once,Must,Not Run,
+TST-004,REQ-MSN-001,Objective progression,Power panel available,Activate panel and observe HUD,Objective changes to next task exactly once,Must,Not Run,
+TST-005,REQ-AI-001,Drone state transitions,Drone in patrol state,Enter sight/noise range; break line of sight; wait,Drone investigates/pursues/searches/returns according to rules,Must,Not Run,
+TST-006,REQ-LVL-001,Full level traversal,Clean mission start,Complete all required objectives three times,"No softlocks, unintended out-of-bounds access, or unreachable required interactables",Must,Not Run,
+TST-007,REQ-AUD-001,Audio event feedback,Audio enabled; panel and drone available,Activate panel; trigger drone alert,Correct distinct cues play at acceptable level without clipping,Should,Not Run,
+TST-008,REQ-UI-001,Prompt and objective readability,Run at target resolution,Approach panel; view objective during movement,Text is legible and prompt appears only for valid target,Must,Not Run,
+TST-009,REQ-NAR-001,Ending trigger exactly once,Reach relay chamber,Activate console; wait for transmission and reply,Final voice and subtitle play once; mission complete appears,Must,Not Run,
+TST-010,REQ-TECH-001,Packaged build smoke test,Release candidate package available,Launch from clean state; complete slice; restart once,"Build launches, completes, and restarts without critical error",Must,Not Run,

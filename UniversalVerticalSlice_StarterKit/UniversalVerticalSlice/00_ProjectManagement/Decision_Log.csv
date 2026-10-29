@@ -1,0 +1,2 @@
+decision_id,date,decision,reason,affected_ids,owner,status
+DEC-001,YYYY-MM-DD,Keep slice to one level and one drone encounter,Protect vertical-slice scope,SEQ-001..SEQ-006,TBD,Proposed

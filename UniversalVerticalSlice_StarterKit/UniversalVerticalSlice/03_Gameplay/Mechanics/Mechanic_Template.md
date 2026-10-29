@@ -1,0 +1,12 @@
+# Mechanic Specification
+- Mechanic ID / name:
+- Player-facing purpose:
+- Inputs:
+- State model:
+- Rules and tunables:
+- Feedback (visual/audio/UI):
+- Dependencies:
+- Failure/recovery behavior:
+- Telemetry/debug support:
+- Acceptance criteria:
+- Test IDs:
